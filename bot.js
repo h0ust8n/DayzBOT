@@ -1,6 +1,6 @@
 const {Client} = require("discord.js");
 const bot = new Client();
-const gamedig = require('WATCHING');
+const gamedig = require('gamedig');
 async function online() {
 	gamedig.query({type: 'dayz', host: '212.22.93.93', port: '2345'
 		}).then((state) => {
