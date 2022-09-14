@@ -2,7 +2,7 @@ const {Client} = require("discord.js");
 const bot = new Client();
 const gamedig = require('gamedig');
 async function online() {
-	gamedig.query({type: 'dayz', host: '212.22.93.93', port: '2345'
+	gamedig.query({type: 'dayz', host: '212.22.93.104', port: '2345'
 		}).then((state) => {
 			bot.user.setActivity(`🎮 Онлайн: ${state.raw.numplayers}/${state.maxplayers}`, {type: 0});
 		}).catch((error) => {
